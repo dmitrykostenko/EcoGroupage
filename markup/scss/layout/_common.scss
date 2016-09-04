@@ -1,0 +1,336 @@
+.scroll-to-holder {
+	display: flex;
+	position: relative;
+	padding-bottom: 56px;
+	@include media('>=tablet') {
+		padding-bottom: 80px;
+		min-height: calc(43vh);
+	}
+	.scroll-link {
+		text-decoration: none;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		color: #307873;
+		padding-bottom: 24px;
+		font: 17px/19px $clementepdaksemibold;
+		transition: color .2s;
+		&:hover {
+			color: darken(#307873, 10%);
+		}
+		&:hover i {
+			background: darken(#307873, 10%);
+		}
+		@include media('>=tablet') {
+			font-size: 26px;
+			padding-bottom: 30px;
+		}
+		i {
+			position: absolute;
+			left: 50%;
+			font-size: 11px;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #44aaa4;
+			color: $white;
+			text-align: center;
+			line-height: 20px;
+			bottom: 0;
+			transform: translateX(-50%);
+			transition: background .2s;
+			@include media('>=tablet') {
+				line-height: 25px;
+				font-size: 13px;
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+}
+
+.link-new-page {
+	font-size: 14px;
+	color: #307873;
+	font-family: $clementepdahbookitalic;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	transition: color .2s;
+	&:hover {
+		text-decoration: none;
+		color: darken(#307873, 10%);
+	}
+	&:hover i {
+		background: darken(#307873, 10%);
+	}
+	i {
+		position: relative;
+		margin-left: 8px;
+		display: inline-block;
+		vertical-align: middle;
+		width: 36px;
+		height: 36px;
+		font-size: 24px;
+		border-radius: 50%;
+		background: #307873;
+		color: $white;
+		transition: background .2s;
+		&:before {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.question-hold {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	.box {
+		padding: 15px 30px 0;
+		line-height: 1;
+		text-align: right;
+		position: relative;
+		width: 100%;
+		text-align: center;
+		@include media('>=tablet') {
+			padding: 15px 81px 45px 10px;
+			text-align: right;
+			width: 50%;
+		}
+		&:first-of-type {
+			letter-spacing: -1px;
+			&:before {
+				@include media('>=tablet') {
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 13%;
+					bottom: 15%;
+					width: 1px;
+					background: $white;
+				}
+			}
+		}
+		&:last-of-type {
+			padding: 0px 30px 15px;
+			@include media('>=tablet') {
+				text-align: left;
+				padding: 15px 10px 45px 81px;
+			}
+		}
+		.text {
+			font-family: $clementepdaksemibold;
+			color: $white;
+			font-size: 26px;
+			@include media('>=phone') {
+				font-size: 34px;
+			}
+			@include media('>=desktop') {
+				font-size: 40px;
+			}
+			@media screen and (min-width: 1024px) and (max-height: 740px) {
+				font-size: 30px;
+			}
+			@include media('>=widescreen') {
+				font-size: 54px;
+			}
+			.light {
+				font-family: $clementepdaelight;
+			}
+			.black {
+				display: block;
+				color: #2c2f31;
+				text-transform: uppercase;
+				font-family: $clementepdambold;
+			}
+		}
+		.link-new-page {
+			float: none;
+			font-size: 20px;
+			color: $white;
+			letter-spacing: 1px;
+			display: inline-block;
+			vertical-align: top;
+			transition: color .2s;
+			@include media('>=tablet') {
+				transform: translateY(-50%);
+				position: absolute;
+				left: 81px;
+				top: 50%;
+			}
+			@include media('>=desktop') {
+				font-size: 25px;
+			}
+			&:hover {
+				color: #307873;
+			}
+			&:hover i {
+				border-color: #307873;
+				color: #307873;
+			}
+			i {
+				background-color: transparent;
+				border: 2px solid $white;
+				width: 42px;
+				height: 42px;
+				font-size: 30px;
+				margin-left: 10px;
+				transition: border-color .2s, color .2s;
+				@include media('>=desktop') {
+					border: 3px solid $white;
+					width: 52px;
+					height: 52px;
+					font-size: 40px;
+					margin-left: 17px;
+				}
+				@include media('>=widescreen') {
+					width: 68px;
+					height: 68px;
+					font-size: 54px;
+				}
+			}
+		}
+	}
+}
+
+.content-holder-box {
+	padding: 154px 0 51px;
+	.link-new-page {
+		margin-right: 8px;
+	}
+	.title-box {
+		position: relative;
+		margin-bottom: 20px;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 25px 25px 0;
+			border-color: transparent #000000 transparent transparent;
+			@include media('>=tablet') {
+				border-width: 0 39px 39px 0;
+			}
+		}
+		.title {
+			background: #44aaa4;
+			padding: 12px 20px 22px 20px;
+			line-height: 1;
+			letter-spacing: 1px;
+			display: inline-block;
+			vertical-align: top;
+			color: $white;
+			font-size: 16px;
+			font-family: $clementepdagbook;
+			@include media('>=phone') {
+				padding: 18px 38px 22px 39px;
+				font-size: 25px;
+			}
+			@include media('>=desktop') {
+				font-size: 34px;
+			}
+			@include media('>=widescreen') {
+				font-size: 42px;
+			}
+		}
+		strong {
+			padding: 0px 20px 15px;
+			line-height: 0.9;
+			margin-top: -10px;
+			letter-spacing: 1px;
+			display: inline-block;
+			vertical-align: top;
+			background: #44aaa4;
+			color: #b3d2a9;
+			font-size: 18px;
+			@include media('>=phone') {
+				margin-top: -20px;
+				padding: 0px 37px 20px;
+				font-size: 25px;
+			}
+			@include media('>=desktop') {
+				font-size: 38px;
+			}
+			@include media('>=widescreen') {
+				font-size: 49px;
+			}
+		}
+	}
+	.text-block {
+		@extend%clearfix;
+		padding: 30px 0 36px;
+		color: #000;
+		font-size: 15px;
+		font-family: $clementepdahbookitalic;
+		text-align: justify;
+		@include media('>=tablet') {
+			padding: 35px 0 105px;
+		}
+		p {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+.partner-block {
+	overflow: hidden;
+	margin-bottom: 20px;
+	@include media('>=tablet') {
+		margin-bottom: 0;
+	}
+	.title {
+		font-size: 18px;
+		color: #307873;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 18px;
+		font-family: $clementepdaksemibold;
+		@include media('>=phone') {
+			letter-spacing: 1px;
+			font-size: 24px;
+			margin-bottom: 27px;
+		}
+	}
+}
+
+.partner-list {
+	@extend%listreset;
+	position: relative;
+	margin: 0 -10px 4px;
+	@include media('>=phone') {
+		margin: 0 -15px 4px;
+	}
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		width: 28%;
+		padding: 0 10px;
+		@include media('>=phone') {
+			width: auto;
+			padding: 0 15px;
+		}
+		@include media('>=tablet') {
+			width: 28%;
+			padding: 0 15px;
+		}
+		@include media('>=desktop') {
+			width: auto;
+		}
+	}
+	a {
+		display: block;
+		img {
+			max-width: 100%;
+			vertical-align: top;
+		}
+	}
+}

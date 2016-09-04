@@ -1,0 +1,79 @@
+/*
+ * set default text color
+ * set default font size, line height and font family
+ * set default background
+ */
+html{height:100%;}
+body {
+	color: $base-text-color;
+	background: $base-background-color;
+	font: #{$base-font-size}/#{$base-line-height} $base-font-family;
+	min-width: 320px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin:0;
+}
+
+// adaptive images
+img {
+	height: auto;
+}
+a {
+	outline: none;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+// google map fix
+.gm-style img {max-width: none}
+
+// hide tel links on desktop
+@media only screen and (min-width:1025px) {
+		a[href^=tel],a[href^=skype], a[href^=sms] {
+		cursor:default;
+		pointer-events:none;
+	}
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+}
+
+#main {
+	background: url(../images/main-bg.jpg) no-repeat;
+	background-size: cover;
+}
+
+.number {
+	font-family: 'clementepdairegular';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 100px;
+	margin: 0 auto 10px;
+	@include media('>=tablet') {
+		position:absolute;
+		left:5px;
+		top:25px;
+	}
+	@include media('>=desktop') {
+		width: 53px;
+		height: 53px;
+		font-size: 37px;
+		line-height: 37px;
+	}
+}

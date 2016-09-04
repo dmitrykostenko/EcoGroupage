@@ -1,0 +1,85 @@
+/* question box style */
+
+.question-bottom-box {
+	font-size: 20px;
+	color: $white;
+	font-family: $clementepdagbook;
+	display: flex;
+	flex-wrap: wrap;
+	@include media('>=phone') {
+		font-size: 22px;
+	}
+	@include media('>=desktop') {
+		font-size: 29px;
+	}
+	strong {
+		font-family: $clementepdambold;
+		display: block;
+		text-transform: uppercase;
+	}
+	.item-box {
+		width: 100%;
+		padding: 30px 40px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		letter-spacing: 2px;
+		line-height: 1.2;
+		text-align: center;
+		@include media('>=tablet') {
+			text-align: right;
+			width: 50%;
+			padding: 66px 111px 45px 40px;
+		}
+		a {
+			float: none;
+			display: inline-block;
+			vertical-align: top;
+			transition: color .2s;
+			&:hover {
+				color: darken($white, 15%);
+			}
+			&:hover i {
+				background: darken($white, 15%);
+			}
+			@include media('>=tablet') {
+				float: right;
+			}
+			i {
+				transition: background .2s;
+			}
+		}
+		&:last-of-type {
+			@include media('>=tablet') {
+				text-align: left;
+				padding: 66px 40px 45px 111px;
+			}
+			a {
+				@include media('>=tablet') {
+					float: left;
+				}
+			}
+		}
+		.question {
+			display: block;
+			margin-bottom: 14px;
+			@include media('>=phone') {
+				margin-bottom: 22px;
+			}
+			@include media('>=desktop') {
+				max-width: 585px;
+				width: 100%;
+				display: inline-block;
+			}
+		}
+		.link-new-page {
+			letter-spacing: 0;
+		}
+		a {
+			color: $white;
+			i {
+				background: $white;
+				color: #307873;
+			}
+		}
+	}
+}

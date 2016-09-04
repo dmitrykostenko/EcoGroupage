@@ -1,0 +1,58 @@
+/* form contact style */
+
+.contact-form {
+	padding: 15px 0;
+	@include media('>=desktop') {
+		padding: 77px 0 44px;
+	}
+}
+
+#forms-contact {
+	max-width: 1000px;
+	padding: 0 10px;
+	.form-group {
+		width: 100%;
+		@include media('>=tablet') {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+		.input-wrap {
+			width: 100%;
+			@include media('>=tablet') {
+				width: 48%;
+			}
+		}
+	}
+	input {
+		margin: 0 0 10px;
+		border: none;
+		box-shadow:none;
+		appearance: none;
+		height: 40px;
+		@include placeholder {
+			color: #fff;
+		};
+	}
+	textarea {
+		border-radius: 20px;
+		background: #3eaaa4;
+		resize: none;
+		width: 100%;
+		border: none;
+		box-shadow:none;
+		appearance: none;
+		outline: none;
+		padding: 6px 12px;
+		color: #fff;
+		@include placeholder {
+			color: #fff;
+		}
+		@include media('>=tablet') {
+			height: 190px;
+		}
+	}
+	.btn {
+		float: right;
+	}
+}

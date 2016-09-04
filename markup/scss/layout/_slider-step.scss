@@ -1,0 +1,155 @@
+/* slider-step style */
+
+.slider-step {
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	padding: 15px 0;
+	@include media('>=desktop') {
+		padding: 50px 0 20px;
+	}
+	h2 {
+		font: 18px/ 20px 'clementepdaksemibold','Arial', sans-serif;
+		color: #307873;
+		margin: 0 0 10px;
+		@include media('>=desktop') {
+			font-size: 26px;
+			line-height: 28px;
+		}
+	}
+	p {
+		margin: 0;
+	}
+	strong {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 10px;
+	}
+	.text-slider {
+		max-width: 750px;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.box1 {
+		border-radius: 5px;
+		background: #3eaaa4;
+		padding: 10px;
+		@include media('>=tablet') {
+			padding: 25px 90px;
+		}
+	}
+	.box2 {
+		border-radius: 0 0 5px 5px;
+		background: #307873;
+		max-width: 250px;
+		padding: 10px;
+		margin: 0 auto;
+		@include media('>=tablet') {
+			max-width: 422px;
+			padding: 10px 50px;
+		}
+		dl,
+		dt {
+			float: none;
+			display: inline;
+		}
+	}
+	dl {
+		margin: 0 0 10px;
+	}
+	dt {
+		font-family: 'clementepdalsemibolditalic';
+		float: left;
+		font-weight: normal;
+		margin: 0 0 10px;
+	}
+	dd {
+		margin: 0 0 10px;
+	}
+	.holder {
+		max-width: 450px;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		@include media('>=phone') {
+			padding: 0 25px;
+		}
+		.box {
+			width: 45%;
+		}
+	}
+}
+
+.slideshow {
+	font: 16px/ 18px 'clementepdaflightitalic','Arial', sans-serif;
+	position: relative;
+	.slideset {
+		position: relative;
+	}
+	.slide {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		color: #fff;
+		&.active {
+			z-index: 2;
+		}
+	}
+	.pagination {
+		font: 18px/ 20px 'clementepdaksemibold','Arial', sans-serif;
+		text-align: center;
+		margin: 0 0 20px;
+		ul {
+			@extend%listreset;
+			display: inline-block;
+			vertical-align: top;
+		}
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 30px;
+			&:hover,
+			&.active {
+				a {
+					border: 1px solid #3eaaa4;
+					background: #3eaaa4;
+					color: #fff;
+				}
+			}
+			&.center {
+				position: relative;
+				&:after,
+				&:before {
+					content:'';
+					position:absolute;
+					left:100%;
+					top:14px;
+					width: 67px;
+					height: 1px;
+					background: #000;
+				}
+				&:before {
+					right: 100%;
+					left: auto;
+				}
+			}
+		}
+		a {
+			@include animate(border background color, 0.3s, linear);
+			display: block;
+			width: 30px;
+			height: 30px;
+			border-radius: 100px;
+			border: 1px solid #000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			color: #307873;
+			text-decoration: none;
+		}
+	}
+}

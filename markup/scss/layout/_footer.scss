@@ -1,0 +1,176 @@
+/* footer style */
+
+#footer {
+	font-size: 14px;
+	line-height: 16px;
+	color: #fff;
+	background: $bg-footer;
+	padding: 20px 0;
+	@include media('>=tablet') {
+		padding: 20px 0 0;
+	}
+	@include media('>=desktop') {
+		padding: 23px 0 47px;
+	}
+	h2 {
+		font: 18px/20px 'clementepdaksemibold','Arial', sans-serif;
+		color: $green;
+		@include media('>=desktop') {
+			font-size: 24px;
+			line-height: 26px;
+		}
+	}
+	a {
+		@include animate (color, 0.5s);
+	}
+	.logo {
+		display: block;
+		width: 150px;
+		margin: 0 auto;
+		@include media('>=tablet') {
+			width: 100%;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.facebook-link {
+		position:absolute;
+		left:50%;
+		transform: translateX(-50%);
+		top:0;
+		@include media('>=desktop') {
+			top:-5px;
+			left: auto;
+			right: 0;
+			transform: translateX(0);
+		}
+	}
+	.link {
+		position: relative;
+		padding: 0 30px 0 0;
+		&:before {
+			content: '';
+			position:absolute;
+			right:0;
+			top:3px;
+			background: url(../images/logo-mk.png) no-repeat;
+			width: 24px;
+			height: 13px;
+		}
+	}
+}
+
+.footer-holder-top {
+	font-family: "clementepdaelight", sans-serif;
+	position: relative;
+	text-align: center;
+	margin: 0 0 20px;
+	padding: 50px 0 0;
+	@include media('>=desktop') {
+		padding: 0
+	}
+	nav {
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			width: 100%;
+			margin: 0 0 10px;
+			color: $footer-nav-color;
+			@include media('>=tablet') {
+				width: auto;
+				margin: 0 15px 10px
+			}
+			&.active,
+			&:hover {
+				color: $footer-nav-color-hover;
+			}
+		}
+	}
+}
+
+.footer-holder-center {
+	margin: 0 0 20px;
+	text-align: center;
+	.title {
+		padding: 0 0 15px;
+		margin: 0 0 30px;
+		border-bottom: 1px solid #fff;
+		h1 {
+			font: 18px/20px 'clementepdaksemibold','Arial', sans-serif;
+			color: #fff;
+			margin: 0;
+			@include media('>=desktop') {
+				font-size: 24px;
+				line-height: 26px;
+			}
+		}
+	}
+	.box-wrap {
+		@include media('>=phone') {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+		}
+		@include media('>=tablet') {
+			flex-flow: row nowrap;
+		}
+		.box {
+			font-family: 'clementepdagbook', sans-serif;
+			margin: 0 0 30px;
+			@include media('>=phone') {
+				width: 50%;
+			}
+			@include media('>=tablet') {
+				width: 23%;
+				margin: 0 0 10px;
+			}
+		}
+		h2 {
+			margin: 0 0 10px;
+			@include media('>=desktop') {
+				margin: 0 0 30px;
+			}
+		}
+		p {
+			margin: 0;
+		}
+		.info {
+			font-family: 'clementepdairegular', sans-serif;
+			text-transform: uppercase;
+			color: $green;
+		}
+	}
+}
+
+.contact {
+	font-family: 'clementepdagbook';
+	text-align: center;
+	@include media('>=tablet') {
+		text-align: left;
+	}
+	h2 {
+		margin: 0 0 20px
+	}
+	.list {
+		@extend %listreset;
+		li:last-child {
+			margin: 10px 0 0;
+		}
+		a {
+			color: #fff;
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+}
+
+.box-copyright {
+	font-family: 'clementepdairegular', sans-serif;
+	text-align: center;
+	margin: 0 0 30px;
+	@include media('>=tablet') {
+		text-align: left;
+	}
+}

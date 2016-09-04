@@ -1,0 +1,223 @@
+/* ---------------------------------------------------------
+   Font-family styles
+   ---------------------------------------------------------*/
+
+@font-face {
+	font-family: 'cassannet_boldbold';
+	src: url('../fonts/cassannet_bold-webfont.eot');
+	src: url('../fonts/cassannet_bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/cassannet_bold-webfont.woff2') format('woff2'),
+		 url('../fonts/cassannet_bold-webfont.woff') format('woff'),
+		 url('../fonts/cassannet_bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'cassannet_regularregular';
+	src: url('cassannet-webfont.eot');
+	src: url('../fonts/cassannet-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/cassannet-webfont.woff2') format('woff2'),
+		 url('../fonts/cassannet-webfont.woff') format('woff'),
+		 url('../fonts/cassannet-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdaahairline';
+	src: url('../fonts/clementepdaa-hairline_0-webfont.eot');
+	src: url('../fonts/clementepdaa-hairline_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdaa-hairline_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdaa-hairline_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdaa-hairline_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdabhairlineitalic';
+	src: url('../fonts/clementepdab-hairlineitalic_0-webfont.eot');
+	src: url('../fonts/clementepdab-hairlineitalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdab-hairlineitalic_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdab-hairlineitalic_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdab-hairlineitalic_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdacextralight';
+	src: url('../fonts/clementepdac-extralight_0-webfont.eot');
+	src: url('../fonts/clementepdac-extralight_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdac-extralight_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdac-extralight_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdac-extralight_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdadextralightitalic';
+	src: url('../fonts/clementepdad-extralightital_0-webfont.eot');
+	src: url('../fonts/clementepdad-extralightital_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdad-extralightital_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdad-extralightital_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdad-extralightital_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdaelight';
+	src: url('../fonts/clementepdae-light_0-webfont.eot');
+	src: url('../fonts/clementepdae-light_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdae-light_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdae-light_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdae-light_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdaflightitalic';
+	src: url('../fonts/clementepdaf-lightitalic_0-webfont.eot');
+	src: url('../fonts/clementepdaf-lightitalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdaf-lightitalic_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdaf-lightitalic_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdaf-lightitalic_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdagbook';
+	src: url('../fonts/clementepdag-book_0-webfont.eot');
+	src: url('../fonts/clementepdag-book_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdag-book_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdag-book_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdag-book_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdahbookitalic';
+	src: url('../fonts/clementepdah-bookitalic_0-webfont.eot');
+	src: url('../fonts/clementepdah-bookitalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdah-bookitalic_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdah-bookitalic_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdah-bookitalic_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdairegular';
+	src: url('../fonts/clementepdai-regular_0-webfont.eot');
+	src: url('../fonts/clementepdai-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdai-regular_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdai-regular_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdai-regular_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdajregularitalic';
+	src: url('../fonts/clementepdaj-regularitalic_0-webfont.eot');
+	src: url('../fonts/clementepdaj-regularitalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdaj-regularitalic_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdaj-regularitalic_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdaj-regularitalic_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdaksemibold';
+	src: url('../fonts/clementepdak-semibold_0-webfont.eot');
+	src: url('../fonts/clementepdak-semibold_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdak-semibold_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdak-semibold_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdak-semibold_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdalsemibolditalic';
+	src: url('../fonts/clementepdal-semibolditalic_0-webfont.eot');
+	src: url('../fonts/clementepdal-semibolditalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdal-semibolditalic_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdal-semibolditalic_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdal-semibolditalic_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdambold';
+	src: url('../fonts/clementepdam-bold_0-webfont.eot');
+	src: url('../fonts/clementepdam-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdam-bold_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdam-bold_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdam-bold_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdanbolditalic';
+	src: url('../fonts/clementepdan-bolditalic_0-webfont.eot');
+	src: url('../fonts/clementepdan-bolditalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdan-bolditalic_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdan-bolditalic_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdan-bolditalic_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdaoheavy';
+	src: url('../fonts/clementepdao-heavy_0-webfont.eot');
+	src: url('../fonts/clementepdao-heavy_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdao-heavy_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdao-heavy_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdao-heavy_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdapheavyitalic';
+	src: url('../fonts/clementepdap-heavyitalic_0-webfont.eot');
+	src: url('../fonts/clementepdap-heavyitalic_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdap-heavyitalic_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdap-heavyitalic_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdap-heavyitalic_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdaqultrabold';
+	src: url('../fonts/clementepdaq-ultrabold_0-webfont.eot');
+	src: url('../fonts/clementepdaq-ultrabold_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdaq-ultrabold_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdaq-ultrabold_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdaq-ultrabold_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'clementepdarultrabolditalic';
+	src: url('../fonts/clementepdar-ultrabolditali_0-webfont.eot');
+	src: url('../fonts/clementepdar-ultrabolditali_0-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/clementepdar-ultrabolditali_0-webfont.woff2') format('woff2'),
+		 url('../fonts/clementepdar-ultrabolditali_0-webfont.woff') format('woff'),
+		 url('../fonts/clementepdar-ultrabolditali_0-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

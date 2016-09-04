@@ -1,0 +1,67 @@
+// custom variables and override bootstrap variables
+
+$white: #fff;
+$black: #000;
+$gray: #343434;
+$green: #b3d2a9;
+$turquois: #44aaa4;
+$turquois-dark: #307873;
+$base-background-color: $white;
+
+$bg-footer: $gray;
+$footer-nav-color: $white;
+$footer-nav-color-hover: $green;
+
+$screen-md: 1024px;
+//Nav
+$navbar-default-toggle-hover-bg: rgba(68,170,164, 0.2);
+//	Typography
+//	Font, line-height, and color for body text, headings, and more.
+$base-font-sans-serif:'Arial','Helvetica', sans-serif;
+$base-font-serif:'Times New Roman', 'Georgia', serif;
+$base-font-family: 'clementepdahbookitalic', $base-font-sans-serif;
+$base-font-sans-serif:'Arial','Helvetica', sans-serif;
+$base-font-serif:'Times New Roman', 'Georgia', serif;
+$base-font-family: 'clementepdahbookitalic', $base-font-sans-serif;
+$clementepdaelight: 'clementepdaelight', $base-font-sans-serif;
+$clementepdambold: 'clementepdambold', $base-font-sans-serif;
+$cassannet_bold: 'cassannet_boldbold', $base-font-sans-serif;
+$clementepdahbookitalic: 'clementepdahbookitalic', $base-font-sans-serif;
+$clementepdaksemibold: 'clementepdaksemibold', $base-font-sans-serif;
+$clementepdagbook: 'clementepdagbook', $base-font-sans-serif;
+$clementepdambold: 'clementepdambold', $base-font-sans-serif;
+$clementepdahbookitalic: 'clementepdahbookitalic', $base-font-sans-serif;
+
+$base-text-color: $black;
+$link-color: $white;
+$base-background-color:$white !default;
+
+$font-size-h1: 23px;
+$font-size-h2: 21px;
+$font-size-h3: 19px;
+$font-size-h4: 17px;
+$font-size-h5: 15px;
+$font-size-h6: 13px;
+$headings-color: #307873;
+
+$base-font-size:13px !default;
+$base-line-height:1.2 !default;
+$vertical-rhythm:($base-line-height * 1em);
+$base-min-width:320px;
+
+//Forms
+$input-bg: #3eaaa4;
+$input-border: transparent;
+$input-border-radius: 20px;
+$input-color-placeholder: $white;
+$input-color:$white;
+$form-group-margin-bottom: 12px;
+
+// Buttons
+$btn-default-color: #59938e;
+$btn-default-bg: #fff;
+$btn-default-border: transparent;
+$btn-primary-color: $white;
+$btn-primary-bg: #91c1a9;
+$btn-primary-border: transparent;
+$btn-border-radius-base:20px;

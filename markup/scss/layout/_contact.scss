@@ -1,0 +1,122 @@
+/* contact style */
+.contacts-wrap {
+	.map-holder {
+		background:#3eaaa4;
+		position: relative;
+		padding: 10px;
+		&:before {
+			content:'';
+			position:absolute;
+			right: 100%;
+			top:0;
+			height: 100%;
+			width: 100%;
+			background:#3eaaa4;
+		}
+		h3 {
+			margin: 0 0 10px;
+			color: #fff;
+			text-align: center;
+			@include media('>=tablet') {
+				text-align: left;
+			}
+		}
+	}
+	.title-wrap {
+		padding: 10px 0;
+		background:#3eaaa4;
+		text-align: center;
+		position: relative;
+		@include media('>=tablet') {
+			position: relative;
+			background: none;
+			text-align: left;
+		}
+		@include media('>=desktop') {
+			padding:0;
+		}
+	}
+	.title {
+		@include media('>=tablet') {
+			background:#3eaaa4;
+			width: 225px;
+			padding: 20px;
+			position: absolute;
+			right: 5%;
+			top: 0;
+			transform: translateY(-50%);
+			z-index: 10;
+		}
+		h2 {
+			color: #fff;
+			margin: 0 0 10px;
+		}
+		.scroll-link {
+			font-size: 25px;
+			cursor: pointer;
+		}
+	}
+	.map-wrap {
+		.text1,
+		.text2,
+		.text3,
+		.text4 {
+			@include media('>=tablet') {
+				color: #fff;
+			}
+		}
+		.text3 {
+			@include media('>=desktop') {
+				left: -160px;
+			}
+		}
+		h3 {
+			text-align: left;
+			color: #000;
+			@include media('>=tablet') {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.contact-list {
+	@extend%listreset;
+	font-size: 22px;
+	line-height: 24px;
+	max-width: 290px;
+	margin: 0 auto;
+	padding: 15px 0;
+	@include media('>=tablet') {
+		text-align:left;
+		padding: 30px 0 0;
+		max-width: none;
+	}
+	@include media('>=desktop') {
+		padding: 100px 0;
+	}
+	li {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 0 0 10px;
+	}
+	a {
+		color: #64bbb6;
+		&:hover {
+			color: #343434;
+		}
+	}
+	i {
+		display: block;
+		width: 35px;
+		height: 35px;
+		border: 2px solid #000;
+		border-radius: 100px;
+		text-align: center;
+		margin: 0 10px 0 0;
+		font-size: 20px;
+		line-height: 31px;
+	}
+}

@@ -1,0 +1,76 @@
+/* isolution style */
+.isolation-content {
+	.question-hold {
+		.text {
+			color: #3eaaa4;
+		}
+		.link-new-page {
+			color: #3eaaa4;
+			@include media('>=tablet') {
+				top: 62%;
+			}
+			@include media('>=desktop') {
+				top: 64%;
+			}
+			i {
+				border: 3px solid #3eaaa4;
+				color: #3eaaa4;
+			}
+		}
+		.box{
+			&:first-of-type:before {
+				background: #3eaaa4;
+			}
+			&:last-of-type {
+				@include media('>=desktop') {
+					padding: 50px 10px 45px 81px;
+				}
+			}
+		}
+		.info {
+			font: 16px/18px 'clementepdairegular','Arial', sans-serif;
+			display: block;
+			padding: 10px 0;
+			@include media('>=tablet') {
+				padding: 33px 0 0;
+			}
+			@include media('>=desktop') {
+				font-size: 30px;
+				line-height: 32px;
+				padding: 0;
+			}
+			strong {
+				font-family: 'clementepdambold','Arial', sans-serif;
+			}
+		}
+	}
+}
+
+.sertifical-holder {
+	text-align: center;
+	@include media('>=tablet') {
+		text-align: left;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+	.box {
+		margin: 0 0 10px;
+		@include media('>=tablet') {
+			width: 25%;
+			padding: 0 10px;
+		}
+	}
+	img {
+		margin: 0 0 10px;
+	}
+	ul {
+		@extend %listreset;
+		a {
+			color: #3f3f41;
+			&:hover {
+				color: #42ada5;
+			}
+		}
+	}
+}

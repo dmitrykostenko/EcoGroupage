@@ -1,0 +1,106 @@
+/* map contacts style */
+
+.maps-holder-top {
+	padding: 10px 0;
+	.title {
+		@include media('>=tablet') {
+			width: 50%;
+			overflow: hidden;
+		}
+		@include media('>=desktop') {
+			width: 460px;
+		}
+		.text {
+			position: relative;
+			text-align: center;
+			@include media('>=tablet') {
+				width: 340px;
+				float: right;
+				text-align: left;
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: flex-start;
+				align-items: center;
+			}
+		}
+		.number {
+			border-color: #2c2f31;
+			color: #2c2f31;
+			@include media('>=tablet') {
+				position: static;
+				margin: 0;
+			}
+		}
+			h2 {
+			margin: 0 0 0 15px;
+			color: #3eaaa4;
+		}
+	}
+}
+
+.map-wrap {
+	font: 14px/16px 'clementepdaksemibold','Arial', sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	max-width: 250px;
+	margin: 0 auto;
+	padding: 20px 0;
+	position: relative;
+	@include media('>=tablet') {
+		max-width: 333px;
+	}
+	h3 {
+		color: #000;
+		font-size: 16px;
+		line-height: 18px;
+		margin: 0 0 5px;
+		@include media('>=tablet') {
+			color: #3eaaa4;
+			font-size: 24px;
+			line-height: 26px;
+			margin: 0 0 10px;
+		}
+	}
+	img {
+		width: 100%;
+		vertical-align: top;
+	}
+	.text1,
+	.text2,
+	.text3,
+	.text4 {
+		width: 139px;
+		position:absolute;
+		left: -17px;
+		top: 18px;
+		@include media('>=tablet') {
+			color: #3eaaa4;
+			width: 200px;
+			left: -63px;
+		}
+	}
+	.text2 {
+		left: auto;
+		right: -31px;
+		top: 46px;
+		@include media('>=tablet') {
+			right: -208px;
+		}
+	}
+	.text3 {
+		top: auto;
+		bottom: 36px;
+		@include media('>=tablet') {
+			left: -183px;
+		}
+	}
+	.text4 {
+		left: auto;
+		right: -24px;
+		top: auto;
+		bottom: 0;
+		@include media('>=tablet') {
+			right: -103px;
+		}
+	}
+}

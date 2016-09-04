@@ -1,0 +1,119 @@
+/* slider home style */
+
+.home-gallery {
+	position: relative;
+	@include media('>=tablet') {
+		margin-left: -30px;
+	}
+	.mask {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		.slideset {
+			width: 99999px;
+			float: left;
+		}
+		.slide {
+			float: left;
+			width: 100%;
+			&.active {
+				z-index: 1;
+			}
+		}
+		.holder-slide {
+			font-family: $clementepdahbookitalic;
+			font-size: 18px;
+			color: $white;
+			.title {
+				display: block;
+				background: $white;
+				color: #307873;
+				text-align: right;
+				padding: 1px 25px;
+			}
+			.foto-block {
+				img {
+					width: 100%;
+					vertical-align: top;
+				}
+			}
+			.text-box {
+				@extend%clearfix;
+				padding: 7px 20px 11px 31px;
+				line-height: 1.27;
+				background: #307873;
+				font-size: 14px;
+				@include media('>=desktop') {
+					font-size: 18px;
+				}
+				p {
+					margin-bottom: 8px;
+				}
+			}
+			.btn {
+				color: #307873;
+				display: inline-block;
+				vertical-align: top;
+				padding: 2px 6px;
+				border-radius: 20px;
+				background: $white;
+				float: right;
+				transition: background .2s;
+				&:hover {
+					background: darken($white, 10%);
+				}
+			}
+		}
+	}
+	.btn-slider {
+		font-size: 0;
+		background: #307873;
+		color: $white;
+		padding: 12px 12px 13px;
+		@include media('>=desktop') {
+			padding: 19px 26px 26px;
+		}
+		.title-slider {
+			display: inline-block;
+			vertical-align: middle;
+			padding-left: 13px;
+			font-size: 20px;
+			@include media('>=desktop') {
+				font-size: 24px;
+			}
+		}
+	}
+	.btn-prev,
+	.btn-next {
+		display: inline-block;
+		vertical-align: middle;
+		width: 32px;
+		height: 32px;
+		border: 2px solid $white;
+		color: $white;
+		border-radius: 50%;
+		text-align: center;
+		margin: 0 4px;
+		text-decoration: none;
+		transition: color .2s, background .2s;
+		position: relative;
+		@include media('>=desktop') {
+			width: 45px;
+			height: 45px;
+		}
+		&:before {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 20px;
+			@include media('>=desktop') {
+				font-size: 30px;
+			}
+		}
+		&:hover {
+			background: $white;
+			color: #307873;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* footer-top style */
+
+.phone-holder {
+	padding: 15px 20px 15px;
+	text-align: center;
+	font-size: 17px;
+	font-family: $clementepdaelight;
+	color: #42ada5;
+	line-height: 1;
+	@include media('>=phone') {
+		font-size: 20px;
+	}
+	@include media('>=tablet') {
+		padding: 24px 20px 24px;
+		font-size: 27px;
+	}
+	@include media('>=desktop') {
+		padding: 31px 40px 29px;
+		font-size: 33px;
+	}
+	.sub-title {
+		display: block;
+		margin-bottom: 14px;
+	}
+	strong {
+		font-family: $clementepdambold;
+	}
+	a {
+		font-family: $clementepdambold;
+		text-decoration: none;
+		color: #42ada5;
+		transition: color .2s;
+		@include media('>=desktop') {
+			cursor: default;
+			pointer-events: none;
+		}
+		&:hover {
+			color: darken(#42ada5, 10%);
+			@include media('>=desktop') {
+				color: #42ada5;
+			}
+		}
+	}
+}

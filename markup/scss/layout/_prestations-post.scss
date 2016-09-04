@@ -1,0 +1,153 @@
+/* prestations style */
+
+.posts-holder {
+	&.post-prestigion {
+		.text-holder ul li {
+			margin: 0 0 10px;
+		}
+	}
+	&.eco-post {
+		@include media('>=desktop') {
+			margin: 0 0 88px;
+		}
+	}
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		color: #fff;
+		&:after,&:before {display: none;}
+		&:nth-child(2n) {
+			flex-flow: column-reverse wrap;
+			color: #3eaaa4;
+			@include media('>=tablet') {
+				flex-flow: inherit;
+			}
+			>div {
+				background: rgba(255,255,255,0.6);
+			}
+			h2 {
+				color: #3eaaa4;
+			}
+			.text-holder {
+				@include media('>=tablet') {
+					float: left;
+				}
+				ul {
+					li:before {
+						background: #000;
+					}
+				}
+			}
+			.number {
+				border: 2px solid #2c2f31;
+				color: #2c2f31;
+			}
+		}
+		>div {
+			padding: 0;
+			background: #91c1a9;
+		}
+	}
+	.text-holder {
+		position: relative;
+		height: 100%;
+		padding: 10px;
+		max-width: 300px;
+		margin: 0 auto;
+		@include media('>=tablet') {
+			padding: 25px 0 25px 50px;
+			max-width: 340px;
+			float: right;
+		}
+		@include media('>=desktop') {
+			max-width: 465px;
+			padding: 25px 100px;
+		}
+		h2 {
+			font-size: 18px;
+			line-height: 20px;
+			text-align: center;
+			margin: 0 0 10px;
+			color: #fff;
+			@include media('>=tablet') {
+				text-align: left;
+			}
+			br {
+				display: none;
+				@include media('>=desktop') {
+					display: block;
+				}
+			}
+		}
+		ul {
+			@extend%listreset;
+			li {
+				position: relative;
+				padding: 0 0 0 10px;
+				&:before {
+					content: '';
+					position:absolute;
+					left:0;
+					top:5px;
+					width: 3px;
+					height: 3px;
+					border-radius: 100px;
+					background: #fff;
+				}
+			}
+		}
+	}
+	.image-holder {
+		height: 150px;
+		position: relative;
+		overflow: hidden;
+		@include media('>=tablet') {
+			height: auto;
+		}
+		img {
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+	&.bg-position {
+		.image-holder {
+			background-position: 30% 50% !important;
+		}
+		.row:nth-child(2n) > div {
+			
+				background-position: 65% 0 !important;
+	
+		}
+	}
+}
+
+.title-holder {
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	padding: 10px 0;
+	@include media('>=tablet') {
+		padding: 20px 0;
+	}
+	@include media('>=desktop') {
+		padding: 60px 0 40px;
+	}
+	h1 {
+		font: 20px/22px 'clementepdaksemibold','Arial', sans-serif;
+		margin: 0 0 10px;
+		color: #307873;
+		@include media('>=desktop') {
+			font-size: 30px;
+			line-height: 32px;
+		}
+	}
+	p {
+		margin: 0 0 10px;
+	}
+	.text-holder {
+		max-width: 560px;
+		margin: 0 auto;
+	}
+}
